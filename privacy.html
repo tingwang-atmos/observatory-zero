@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Privacy information for Observatory Zero — 零号观察站。" />
+  <meta name="theme-color" content="#101923" />
+  <title>Privacy · Observatory Zero</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0d1520;
+      --text: #e8edf1;
+      --muted: #a7b6c4;
+      --dim: #8296a8;
+      --line: rgba(166, 190, 210, .18);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0; min-height: 100vh; color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans SC", "PingFang SC", "Microsoft YaHei", sans-serif;
+      background: radial-gradient(ellipse 80% 38% at 50% 0%, #233448 0%, #13202e 52%, var(--bg) 100%);
+      line-height: 1.8;
+    }
+    a { color: inherit; text-underline-offset: 4px; }
+    a:focus-visible { outline: 2px solid #b5cadd; outline-offset: 5px; }
+    .wrap { width: min(100% - 44px, 900px); margin: 0 auto; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 24px; padding: 34px 0; }
+    .brand { text-decoration: none; font-size: 12px; letter-spacing: .22em; font-weight: 600; white-space: nowrap; }
+    .back { text-decoration: none; font-size: 13px; color: var(--muted); }
+    .back:hover, footer a:hover { color: #fff; }
+    .hero { padding: clamp(70px, 12vw, 130px) 0 56px; border-bottom: 1px solid var(--line); }
+    .eyebrow { margin: 0 0 18px; font-size: 11px; letter-spacing: .24em; color: #b3c5d4; text-transform: uppercase; }
+    h1 { margin: 0; font: 400 clamp(46px, 7vw, 72px)/1.2 Georgia, "Times New Roman", serif; letter-spacing: -.025em; }
+    .subtitle { margin: 10px 0 0; font-size: 17px; letter-spacing: .12em; color: var(--muted); }
+    .intro { max-width: 700px; margin: 30px 0 0; color: var(--muted); }
+    .updated { margin: 25px 0 0; font-size: 12px; color: var(--dim); }
+    .content { padding-top: 34px; }
+    section { display: grid; grid-template-columns: 190px minmax(0, 1fr); gap: 36px; padding: 36px 0; border-bottom: 1px solid var(--line); }
+    section h2 { margin: 0; font: 400 21px/1.35 Georgia, "Times New Roman", serif; }
+    section h2 span { display: block; margin-top: 8px; font: 400 12px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--dim); letter-spacing: .05em; }
+    .copy p { margin: 0 0 14px; color: var(--muted); font-size: 14px; }
+    .copy p:last-child { margin-bottom: 0; }
+    .copy .english { font-size: 13px; color: var(--dim); }
+    .copy a { color: #cbdce9; }
+    footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding: 28px 0 45px; font-size: 12px; color: var(--dim); }
+    footer a { text-decoration: none; }
+    @media (max-width: 640px) {
+      header { align-items: flex-start; flex-direction: column; gap: 15px; }
+      section { grid-template-columns: 1fr; gap: 12px; }
+      .hero { padding-top: 65px; }
+      .eyebrow { letter-spacing: .15em; }
+    }
+    @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="index.html" aria-label="Observatory Zero 首页">O / ZERO</a>
+      <a class="back" href="index.html">← Back to Home / 返回首页</a>
+    </header>
+    <main>
+      <div class="hero">
+        <p class="eyebrow">The world, as it unfolds</p>
+        <h1>Privacy</h1>
+        <p class="subtitle">隐私说明</p>
+        <p class="intro">Observatory Zero 是一个用于科学研究、创作与个人观察的独立静态网站。我们希望这里保持简单，也尽可能尊重访问者的隐私。</p>
+        <p class="updated">Last updated / 最后更新：2026-10-23</p>
+      </div>
+
+      <div class="content">
+        <section aria-labelledby="collection">
+          <h2 id="collection">Information<span>信息收集</span></h2>
+          <div class="copy">
+            <p>目前，本网站不提供用户注册、评论或在线表单，也没有主动接入网站访问分析或广告追踪脚本。我们不会通过这些功能主动收集访问者的个人信息。</p>
+            <p class="english" lang="en">At present, this site has no accounts, comments, or submission forms, and does not intentionally include analytics or advertising trackers. It does not actively collect personal information through such features.</p>
+          </div>
+        </section>
+
+        <section aria-labelledby="hosting">
+          <h2 id="hosting">Hosting<span>网站托管</span></h2>
+          <div class="copy">
+            <p>本网站通过 GitHub Pages 托管。为了提供网页服务，GitHub 及相关基础设施可能按照其自身的政策处理 IP 地址、浏览器信息或请求日志等技术数据；这些处理并不由本站直接控制。</p>
+            <p class="english" lang="en">This site is hosted on GitHub Pages. GitHub and its infrastructure may process technical information, such as IP addresses, browser details, and request logs, under their own policies. The site owner does not directly control that processing.</p>
+            <p><a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer" target="_blank">GitHub Privacy Statement ↗</a></p>
+          </div>
+        </section>
+
+        <section aria-labelledby="cookies">
+          <h2 id="cookies">Cookies<span>Cookies 与追踪</span></h2>
+          <div class="copy">
+            <p>本站当前的页面本身不主动设置用于分析或广告的 Cookies，也不使用第三方追踪脚本。浏览器或网站托管服务可能有其自身的技术性处理行为。</p>
+            <p class="english" lang="en">The site's own pages currently do not intentionally set analytics or advertising cookies or run third-party tracking scripts. Browser and hosting-provider behavior may be subject to separate policies.</p>
+          </div>
+        </section>
+
+        <section aria-labelledby="links">
+          <h2 id="links">External Links<span>外部链接</span></h2>
+          <div class="copy">
+            <p>本站可能链接到论文、代码仓库或其他网站。离开 Observatory Zero 后，相关网站的隐私做法由其各自的政策决定。</p>
+            <p class="english" lang="en">Links may lead to papers, code repositories, or other websites. Those sites have their own privacy practices.</p>
+          </div>
+        </section>
+
+        <section aria-labelledby="changes">
+          <h2 id="changes">Changes<span>说明更新</span></h2>
+          <div class="copy">
+            <p>如果未来增加评论、联系表单、访问统计或其他功能，本页面将相应更新。页面顶部会标明最新修订日期。</p>
+            <p class="english" lang="en">If forms, comments, analytics, or other features are introduced, this page will be updated and the revision date will be changed.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <span>© Observatory Zero</span>
+      <a href="index.html">The world, as it unfolds.</a>
+    </footer>
+  </div>
+</body>
+</html>
